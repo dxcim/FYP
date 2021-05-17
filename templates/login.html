@@ -1,0 +1,11 @@
+{% extends "shell.html" %}
+{% block content %}
+<h3 align="center">Welcome!</h3>
+<table align="center">
+  <form action="" method="post">
+    <tr><td>{{form.username.label}}</td><td>{{form.username(size=30)}}</td></tr>
+    <tr><td>{{form.password.label}}</td><td>{{form.password(size=30)}}</td></tr>
+    <tr><td>{{form.submit()}}</td><td></td></tr>
+  </form>
+</table>
+{% endblock %}
